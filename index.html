@@ -26,6 +26,13 @@
         .inicio h2 { color: white; font-size: 22px; margin-bottom: 15px; }
         .inicio p { max-width: 700px; color: #eeeeee; font-size: 16px; line-height: 1.6; }
         
+        /* Estilos de la sección del video y su enlace */
+        .seccion-video-contenedor { background-color: #ffffff; padding: 40px 20px; text-align: center; max-width: 800px; margin: 40px auto; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.06); }
+        .video-box { width: 100%; max-width: 500px; margin: 0 auto 20px auto; border-radius: 8px; overflow: hidden; background: #000; box-shadow: 0 4px 10px rgba(0,0,0,0.15); }
+        .video-portada { width: 100%; height: auto; display: block; max-height: 400px; object-fit: cover; }
+        .btn-tiktok { display: inline-block; background-color: #241b1f; color: #ffffff; padding: 10px 22px; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 14px; transition: background 0.3s; }
+        .btn-tiktok:hover { background-color: #b76e79; }
+
         .populares-seccion { padding: 50px 7%; text-align: center; }
         .populares-seccion h2 { color: #9b5360; font-size: 32px; margin-bottom: 30px; }
         .grid-populares { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-bottom: 35px; }
@@ -76,8 +83,20 @@
         <p>Descubre nuestra colección exclusiva. El 5% de cada adquisición será destinado a apoyar a niños con cáncer.</p>
     </section>
 
+    <!-- Sección del video local con su nombre exacto y enlace independiente a TikTok -->
+    <div class="seccion-video-contenedor">
+        <div class="video-box">
+            <video autoplay muted loop playsinline class="video-portada">
+                <source src="videopromoperfumes.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de video.
+            </video>
+        </div>
+        <p style="margin-bottom: 12px; font-size: 14px; color: #555;">¿Te gusta nuestro contenido? Míralo y compártelo:</p>
+        <a href="https://www.tiktok.com/t/ZPL1tq1bB" target="_blank" class="btn-tiktok">🔗 Ver video en TikTok</a>
+    </div>
+
     <section class="populares-seccion">
-        <h2>🔥Más Populares</h2>
+        <h2>🔥 Los 7 Perfumes Más Populares</h2>
         <div class="grid-populares">
             <div class="tarjeta-pop"><img src="https://www.elizabetharden.co.uk/cdn/shop/files/story-3.jpg?v=1771418952&width=1600" alt="Aura Rose"><h4>Aura Rose</h4><span class="precio">$899 MXN</span><button onclick="agregar('Aura Rose', 899)">Agregar</button></div>
             <div class="tarjeta-pop"><img src="https://http2.mlstatic.com/D_NQ_NP_845314-MLM100978079713_122025-O.webp" alt="Pink Essence"><h4>Pink Essence</h4><span class="precio">$799 MXN</span><button onclick="agregar('Pink Essence', 799)">Agregar</button></div>
