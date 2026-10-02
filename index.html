@@ -26,10 +26,10 @@
         .inicio h2 { color: white; font-size: 22px; margin-bottom: 15px; }
         .inicio p { max-width: 700px; color: #eeeeee; font-size: 16px; line-height: 1.6; }
         
-        /* Estilos de la sección del video y su enlace */
-        .seccion-video-contenedor { background-color: #ffffff; padding: 40px 20px; text-align: center; max-width: 800px; margin: 40px auto; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.06); }
-        .video-box { width: 100%; max-width: 500px; margin: 0 auto 20px auto; border-radius: 8px; overflow: hidden; background: #000; box-shadow: 0 4px 10px rgba(0,0,0,0.15); }
-        .video-portada { width: 100%; height: auto; display: block; max-height: 400px; object-fit: cover; }
+        /* Estilos ajustados para video vertical de TikTok completo sin recortes */
+        .seccion-video-contenedor { background-color: #ffffff; padding: 40px 20px; text-align: center; max-width: 500px; margin: 40px auto; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.06); }
+        .video-box { width: 100%; max-width: 280px; height: 500px; margin: 0 auto 20px auto; border-radius: 12px; overflow: hidden; background: #000; box-shadow: 0 4px 10px rgba(0,0,0,0.15); display: flex; justify-content: center; align-items: center; }
+        .video-portada { width: 100%; height: 100%; object-fit: contain; display: block; background-color: #000; }
         .btn-tiktok { display: inline-block; background-color: #241b1f; color: #ffffff; padding: 10px 22px; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 14px; transition: background 0.3s; }
         .btn-tiktok:hover { background-color: #b76e79; }
 
@@ -83,10 +83,10 @@
         <p>Descubre nuestra colección exclusiva. El 5% de cada adquisición será destinado a apoyar a niños con cáncer.</p>
     </section>
 
-    <!-- Sección del video local con su nombre exacto y enlace independiente a TikTok -->
+    <!-- Sección del video vertical optimizada -->
     <div class="seccion-video-contenedor">
         <div class="video-box">
-            <video autoplay muted loop playsinline class="video-portada">
+            <video controls autoplay muted loop playsinline class="video-portada">
                 <source src="videopromoperfumes.mp4" type="video/mp4">
                 Tu navegador no soporta la reproducción de video.
             </video>
@@ -122,5 +122,7 @@
         alert("¡" + nombre + " agregado al carrito!");
     }
 </script>
+</body>
+</html>
 </body>
 </html>
